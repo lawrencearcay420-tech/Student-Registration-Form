@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f4f8;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.page-shell {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.registration-card {
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #234b91;
+}
+
+.intro {
+  color: #555555;
+}
+
+.form-section {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #dddddd;
+}
+
+.form-section h2 {
+  color: #234b91;
+  font-size: 18px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 95%;
+  padding: 9px;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input.error,
+.field select.error,
+.field textarea.error,
+.agreement-row input.error {
+  border: 2px solid red;
+  background-color: #fff0f0;
+}
+
+.error-message {
+  min-height: 16px;
+  margin: 4px 0 0;
+  color: red;
+  font-size: 13px;
+}
+
+.agreement-row {
+  margin-top: 15px;
+}
+
+.agreement-row.agreed {
+  padding: 6px;
+  background-color: #e8f5e9;
+}
+
+.agreement-row label {
+  font-size: 14px;
+}
+
+.agreement-error {
+  margin-left: 20px;
+}
+
+.form-message {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.form-message.success {
+  display: block;
+  color: green;
+  background-color: #e8f5e9;
+  border: 1px solid green;
+}
+
+.form-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  color: #222;
+  background-color: #dddddd;
+}
+
+.button-primary {
+  color: white;
+  background-color: #2855a5;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+
+  .registration-card {
+    padding: 15px;
+  }
+
+}

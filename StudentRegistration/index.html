@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <div class="registration-card">
+      <div class="form-header">
+        <h1>Student Registration</h1>
+        <p class="intro">Please fill in all the required information.</p>
+      </div>
+
+      <form id="registration-form" novalidate>
+        <div class="form-section">
+          <h2>Personal Information</h2>
+          <div class="field-grid">
+            <div class="field">
+              <label for="student-id">Student ID</label>
+              <input id="student-id" name="studentId" type="text"
+                placeholder="Example: 2026-01234" data-label="Student ID"
+                data-validation="required" data-error-id="student-id-error">
+              <p id="student-id-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="full-name">Full Name</label>
+              <input id="full-name" name="fullName" type="text"
+                placeholder="Enter your full name" data-label="Full name"
+                data-validation="required" data-error-id="full-name-error">
+              <p id="full-name-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="text"
+                placeholder="name@example.com" data-label="Email"
+                data-validation="email" data-error-id="email-error">
+              <p id="email-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="text"
+                placeholder="09171234567" data-label="Phone number"
+                data-validation="phone" data-error-id="phone-error">
+              <p id="phone-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="date-of-birth">Date of Birth</label>
+              <input id="date-of-birth" name="dateOfBirth" type="text"
+                placeholder="YYYY-MM-DD"
+                data-label="Date of birth" data-validation="date"
+                data-error-id="date-of-birth-error">
+              <p id="date-of-birth-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" data-label="Gender"
+                data-validation="required" data-error-id="gender-error">
+                <option value="">Select gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+              </select>
+              <p id="gender-error" class="error-message"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Enrollment Information</h2>
+          <div class="field-grid">
+            <div class="field">
+              <label for="program">Program</label>
+              <select id="program" name="program" data-label="Program"
+                data-validation="required" data-error-id="program-error">
+                <option value="">Select a program</option>
+                <option value="bsit">BSIT</option>
+                <option value="bscs">BSCS</option>
+                <option value="bsba">BSBA</option>
+                <option value="nursing">CON</option>
+              </select>
+              <p id="program-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="year-level">Year Level</label>
+              <select id="year-level" name="yearLevel" data-label="Year level"
+                data-validation="required" data-error-id="year-level-error">
+                <option value="">Select a year level</option>
+                <option value="1">First year</option>
+                <option value="2">Second year</option>
+                <option value="3">Third year</option>
+                <option value="4">Fourth year</option>
+              </select>
+              <p id="year-level-error" class="error-message"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Account Information</h2>
+          <div class="field-grid">
+            <div class="field">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password"
+                placeholder="At least 8 characters" data-label="Password"
+                data-validation="password" data-error-id="password-error">
+              <p id="password-error" class="error-message"></p>
+            </div>
+
+            <div class="field">
+              <label for="confirm-password">Confirm Password</label>
+              <input id="confirm-password" name="confirmPassword" type="password"
+                placeholder="Type your password again" data-label="Confirm password"
+                data-validation="confirm-password" data-error-id="confirm-password-error">
+              <p id="confirm-password-error" class="error-message"></p>
+            </div>
+
+            <div class="field field-full">
+              <label for="address">Address</label>
+              <textarea id="address" name="address" rows="3"
+                placeholder="Enter your address" data-label="Address"
+                data-validation="required" data-error-id="address-error"></textarea>
+              <p id="address-error" class="error-message"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="agreement-row">
+          <input id="agreement" name="agreement" type="checkbox"
+            data-label="Agreement" data-validation="agreement"
+            data-error-id="agreement-error">
+          <label for="agreement">I agree that the information I entered is correct.</label>
+        </div>
+        <p id="agreement-error" class="error-message agreement-error"></p>
+
+        <p id="form-message" class="form-message"></p>
+
+        <div class="form-actions">
+          <button class="button button-secondary" type="reset">Reset Form</button>
+          <button class="button button-primary" type="submit">Submit Registration</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
