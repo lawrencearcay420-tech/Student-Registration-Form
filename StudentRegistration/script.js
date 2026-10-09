@@ -1,5 +1,3 @@
-"use strict";
-
 const form = document.querySelector("#registration-form");
 const message = document.querySelector("#form-message");
 const agreementRow = document.querySelector(".agreement-row");
